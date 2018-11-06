@@ -13,7 +13,7 @@ function aThousandDie() {
         // based on what the number is, it increments the respective value in count array
         count[(num1+num2)-2]++
     }
-    // variable for label
+    // variable for label, starts at 2
     var label = 2;
     // loops through count array
     count.forEach (x => {
@@ -29,12 +29,12 @@ function aThousandDie() {
         var newDiv = document.createElement("div");
         newDiv.className = "bars"
         newDiv.style.width = x * 2 + "px"
-
+        // pushes div to barGraph div in html
         var destination2 = document.getElementById("barGraph");
         destination2.appendChild(newDiv);
-
+        // increments label variable by 1
         label++;
     })
 }
-
+// adds click event listener to input button with id "run"
 document.getElementById("run").addEventListener("click", aThousandDie);
