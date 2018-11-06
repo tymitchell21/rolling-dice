@@ -7,7 +7,7 @@ function aThousandDie() {
     var count = [0,0,0,0,0,0,0,0,0,0,0]
     // loop that repeats 1000 times for each roll
     for (let i=0; i<1000; i++) {
-        // generates random number between 2 and 12 inclusive
+        // generates 2 random numbers between 1 and 6 inclusive
         var num1 = Math.floor((Math.random() * 6) + 1)
         var num2 = Math.floor((Math.random() * 6) + 1)
         // based on what the number is, it increments the respective value in count array
