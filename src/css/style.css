@@ -1,0 +1,27 @@
+body {
+    background-color: lightgrey;
+}
+h3 {
+    text-decoration: underline;
+}
+#results {
+    display: flex;
+    flex-direction: row;
+}
+#counts {
+    width: 500px;
+}
+#barGraph {
+    margin-left: 75px;
+    display: block;
+}
+#barGraph h3 {
+    width: 1500px;
+    margin-bottom: 60px;
+}
+.bars {
+    height: 20px;
+    background-color: red;
+    border: 1px solid black;
+    margin-bottom: 11.75px;
+}
